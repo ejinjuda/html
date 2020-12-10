@@ -1,0 +1,84 @@
+* {margin: 0; padding: 0;}
+
+/* common */
+.container {
+  width: 600px; margin: 0 auto;
+  text-align: center;
+}
+
+/* uppermost */
+.uppermost {
+  background-color: #ffc4ff;
+}
+.container-um{
+ background-color: #ff77a9;
+}
+/* header */
+header {
+  background-color: #8bf6ff;
+  
+}
+.container-h {
+ background-color: #4fc2f7;
+ background-image: url("https://cdn.pixabay.com/photo/2020/02/15/22/55/couple-4852225__340.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 100px;
+}
+/* nav */
+nav {
+  background-color: #ffb2ff;
+}
+.container-n {
+  background-color: #ea80fc;
+}
+/* main */
+main {
+  background-color: #efefef;
+ 
+}
+.container-m {
+  background-color: #bcbcbc;
+  outline: 3px solid tomato;
+  overflow: hidden;
+}
+.container-m section {
+  float: left;
+}
+.container-m section.s1{
+  width: 50%;
+  background-color: #fff59d;
+}
+.container-m section.s2{
+  width: 30%;
+  background-color: #b2ebf2;
+}
+.container-m section.s3{
+  width: 20%;
+  background-color: #ff8a50;
+}
+/* clearfix */
+.clearfix {
+  clear: both;
+}
+/* footermenu */
+.footermenu {
+  background-color: #fff59d;
+}
+.container-fm {
+  background-color: #ffcc80;
+}
+/* footer */
+footer {
+  background-color: #8bc34a
+  ;
+}
+.container-f {
+  background-color: #599014;
+}
+
+/* 배경색 제거 */
+header, nav, main {
+  background-color: transparent ;
+}
+

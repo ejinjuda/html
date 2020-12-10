@@ -1,0 +1,23 @@
+h1 {text-align: center;}
+.header {
+  background-color: yellowgreen;   
+  height: 15vh; 
+}
+.nav {
+  background-color: coral;
+  float: left;
+  width: 20%;
+  height: 70vh;
+  
+}
+.section {
+  background-color: cornflowerblue;
+  float: left;
+  width: 80%;
+  height: 70vh;
+}
+.clearfix {
+  clear: both;
+  background-color: violet;
+  height: 15vh;
+}

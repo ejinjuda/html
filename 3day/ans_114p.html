@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>p114</title>
+  <style>
+    body {
+      text-align: center;
+    }
+
+    header {
+      background-color: thistle;
+      height: 10vh;
+    }
+
+    nav {
+      background-color: yellow;
+      height: 10vh;
+    }
+
+    .content>.left {
+      float: left;
+      width: 70%;
+      background-color: violet;
+    }
+
+    .content>.left>.s1 {
+      height: 30vh;
+    }
+
+    .content>.left>.s2 {
+      height: 40vh;
+    }
+
+    .content>.right {
+      float: left;
+      width: 30%;
+    }
+
+    .content>.right>article {
+      height: 20vh;
+      background-color: tomato;
+    }
+
+    .content>.right>aside {
+      height: 50vh;
+      background-color: teal;
+    }
+
+    .content>.left>.s2 {
+      position: relative;
+    }
+
+    .content>.left>.s2>footer {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      background-color: white;
+      /* 부모요소에 display:static이 아닌 요소를 기준으로 위치를 잡는다 */
+    }
+
+    footer {
+      background-color: turquoise;
+      height: 10vh;
+    }
+
+    .clearfix {
+      clear: both;
+    }
+  </style>
+</head>
+
+<body>
+  <header>header</header>
+  <nav>nav</nav>
+  <div class="content">
+    <div class="left">
+      <section class="s1">section</section>
+      <section class="s2">
+        <header>header</header>
+        section
+        <footer>footer</footer>
+      </section>
+    </div>
+    <div class="right">
+      <article>article</article>
+      <aside>aside</aside>
+    </div>
+  </div>
+  <div class="clearfix">
+    <footer>footer</footer>
+  </div>
+</body>
+
+</html>

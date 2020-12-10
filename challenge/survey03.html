@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>설문지</title>
+</head>
+
+<body>
+  <header>
+    <h3>설문지</h3>
+    소프트웨어 기술에 대한 의견을 듣습니다
+    <hr>
+  </header>
+  <section>
+    <form>
+      <ul>
+        <li>
+          학년
+          <label><input type="radio" name="grade" id="1" checked>1학년</label>
+          <label><input type="radio" name="grade" id="2">2학년</label>
+          <label><input type="radio" name="grade" id="3">3학년</label>
+          <label><input type="radio" name="grade" id="4">4학년</label>
+        </li>
+        <li>
+          성별
+          <label><input type="radio" name="sex" id="male">남자</label>
+          <label><input type="radio" name="sex" id="female" checked>여자</label>
+        </li>
+        <li>
+          <label>관심 분야
+          <input type="text" list="interest" placeholder="모바일 소프트웨어"></label>
+          <datalist id="interest">
+            <option value="모바일 소프트웨어">
+            <option value="웹 개발자">
+            <option value="프로그래밍">
+          </datalist>
+        </li>
+        <li>
+          진로
+          <label><input type="checkbox" id="develop" checked>개발</label>
+          <label><input type="checkbox" id="plan">기획</label>
+          <label><input type="checkbox" id="business">영업</label>
+          <label><input type="checkbox" id="startup">창업</label>
+        </li>
+        <article>
+        <li>
+          남기고 싶은 말<br>
+          <textarea cols="40" rows="5" placeholder="글을 남겨주세요"></textarea>
+        </li>
+      </article>
+      </ul>
+    </form>
+  </section>
+  <footer>
+    <p><small>Copyright 2017 by Kitae</small></p>
+  </footer>
+</body>
+
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>114p</title>
+  <style>
+    body.main {
+      margin: 0%; 
+      border: 5px solid blue;
+      color: crimson;
+      /* background-color: blue; */
+      text-align: center;
+    }
+    
+    header {
+      height: 10vh;
+      background-color: whitesmoke ;
+      border-bottom: 5px solid blue;
+       
+    }
+    nav {
+      height: 10vh;
+      background-color: whitesmoke ;
+      border-bottom: 5px solid blue;
+    
+    }
+    .content>.left {
+      width: 70%;
+      float: left;
+      border-right: 5px solid blue;
+    }
+    .content>.right {
+      width: 29%;
+      float: left;
+      background-color: whitesmoke;
+      height: 70vh;
+    
+    }
+    .content>.right>article {
+      height: 20vh;
+      border-bottom: 5px solid blue;
+    
+    }
+    .content>.left>.s1 {
+      height: 30vh;
+      background-color: darkgrey;
+   
+    }
+    .content>.left>.s2 {
+      height: 40vh;
+      background-color: darkgrey;
+   
+    }
+    .clearfix {
+      height: 10vh;
+      clear: both;
+    }
+    /* article {
+      background-color: whitesmoke;
+      height: 20%;
+    } */
+  </style>
+</head>
+
+<body class="main">
+  <header>header</header>
+  <nav>nav</nav>
+  <div class="content">
+    <div class="left">
+      <div class="s1">
+        <section>section</section>
+      </div>
+      <div class="s2">
+        <header>header</header>
+        section
+        <footer>footer</footer>
+      </div>
+    </div>
+    <div class="right">
+      <article>article</article>
+      <aside>aside</aside>
+    </div>
+  </div>
+  <div class="clearfix">
+    <footer>footer</footer>
+  </div>
+</body>
+
+</html>

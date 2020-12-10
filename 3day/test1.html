@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    div {
+      background-color: yellow;
+      /* 
+       미지정시 가로는 100%, 세로는 자식요소의 높이만큼 공간을 차지한다
+       내용(컨텐츠)이 없으면 공간을 갖지 않는다.
+      width: 400px;
+      height: 200px; 
+      */
+      }
+     /* float 용도: 이미지와 텍스트를 잘 어울리게 하기위해 사용됨  */
+    div > img { 
+      float: left; margin: 5px 5px 0px 0px;
+    }  
+  </style>
+</head>
+<body>
+  <!-- <div class="box">오늘은 월요일입니다.</div>
+  <input type="text"> -->
+    <div class="box">
+      <img src="http://placehold.it/100x100">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint perferendis labore, quos, distinctio ex alias a voluptate nesciunt, praesentium quaerat optio eaque ab. Exercitationem inventore sunt laudantium vel, tempore aliquid.
+      Sed, temporibus quos earum enim nam saepe ab debitis harum quam provident praesentium ipsa pariatur dignissimos. Provident nihil sit ducimus sint facere quibusdam quasi corrupti! Sunt placeat quo commodi iusto.
+      Fugit nulla cupiditate distinctio dolores placeat, aliquam hic rem reprehenderit quam? Numquam voluptatem commodi suscipit voluptatibus. Ab repellendus facere corporis fuga sapiente natus aperiam asperiores, voluptate dolores consequuntur deleniti minus?
+      <!-- <img src="http://placehold.it/100x100"> -->
+    </div>
+    <!-- <img src="http://placehold.it/100x100"> -->
+</body>
+</html>

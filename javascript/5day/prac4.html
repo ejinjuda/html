@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    img{
+      width: 90px; height: 50px;
+      position: fixed;
+      /* left:100px; top: 200px; */
+      /* transition: 0.05s; */
+    }
+  </style>
+</head>
+<body>
+  <h3>이미지 커서 만들기</h3>
+  <hr>
+  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis atque natus necessitatibus, explicabo doloremque eligendi nemo sint eos debitis quos ex corporis molestias temporibus aliquam dolores eum alias voluptate vitae?
+  </p>
+  <div>
+    <img src="https://t1.daumcdn.net/cfile/tistory/2261AA46582D467B3C" alt="">
+  </div>
+  <script>
+    const $img = document.querySelector("img");
+
+    document.addEventListener("mousemove", function(evt){
+      // $img.style.left = `${evt.clientX}px`;
+      // $img.style.top = `${evt.clientY}px`;
+      $img.style.left = evt.clientX + 'px';
+      $img.style.top = evt.clientY + 'px';
+    });
+  </script>
+</body>
+</html>
